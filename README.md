@@ -2,7 +2,7 @@
 This is an implementation of the Nim game in Haskell using Free Monads. The Nim game example is taken from Graham Huttons "Programming in Haskell" 2nd. Edition.
 
 The initial board comprises five rows of stars as follows:
-1. * * * * * 
+1. \* \* \* \* \* 
 2. * * * * 
 3. * * * 
 4. * *
