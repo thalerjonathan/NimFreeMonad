@@ -97,7 +97,10 @@ test-suite nim-test
     , TestInterpreter
     , PlayerInput
     , PlayerMove
-
+    , PrintBoard
+    , ApplyMoveToBoard
+    , GameLoop
+    
   hs-source-dirs:
       src/
     , test/

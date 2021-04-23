@@ -7,13 +7,13 @@ import TestInterpreter
 
 import Nim
 
-test_player_input :: TestTree 
-test_player_input = testGroup "Test playerInput"
-  [ test_player_input_valid
+test_playerInput :: TestTree 
+test_playerInput = testGroup "Test playerInput"
+  [ test_playerInput_valid
   ]
 
-test_player_input_valid :: TestTree
-test_player_input_valid = testCase "valid playerInput" $ do
+test_playerInput_valid :: TestTree
+test_playerInput_valid = testCase "valid playerInput" $ do
   let script     = getPlayerInput mkFirstPlayer
       input      = ["1", "5"]
       (ret, out) = testNimScript input script

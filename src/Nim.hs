@@ -2,10 +2,15 @@ module Nim
   ( Player
   , mkFirstPlayer
 
+  , initialBoard
+  
   , nim
 
+  , gameLoop
   , playerMove
   , getPlayerInput
+  , printBoard
+  , applyMoveToBoard
   ) where 
 
 import Control.Monad
@@ -18,7 +23,10 @@ instance Show Player where
   show (P i) = "Player " ++ show (i + 1)
 
 nim :: NimScript ()
-nim = gameLoop [5,4,3,2,1] mkFirstPlayer
+nim = gameLoop initialBoard mkFirstPlayer
+
+initialBoard :: [Int]
+initialBoard = [5,4,3,2,1]
 
 gameLoop :: [Int] -> Player -> NimScript ()
 gameLoop b p = do
